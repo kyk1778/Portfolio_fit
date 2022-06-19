@@ -14,7 +14,13 @@ FIT는 두 가지 뜻이 있습니다.
 
 
 <h2>사용한 기술</h2>
+<h3>주요 개발툴</h3>
+<b>Java, Html5, Css, JavaScript, Ajax, Jquery, Spring3</b>
 
+<h3>협업툴</h3>
+<a href="https://www.collabee.co/">콜라비</a><br>
+문서 기반 협업툴<br>
+팀원 중 협업툴을 사용하지 않은 사람 다수, Notion에 비해 초보자가 사용하기 쉽고 직관적이라 협업툴로 선택<br>
 
 <h3>팀 구성원</h3>
 김유경, 이형화, 김채린

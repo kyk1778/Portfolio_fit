@@ -15,7 +15,7 @@ FIT는 두 가지 뜻이 있습니다.
 
 <h2>사용한 기술</h2>
 <h3>주요 개발툴</h3>
-<b>Java, Html5, Css, JavaScript, Ajax, Jquery, Spring3, Oracle</b>
+<b>Java, Html5, CSS, JavaScript, Ajax, Jquery, Spring3, Oracle</b>
 
 <h3>협업툴</h3>
 <a href="https://www.collabee.co/">콜라비</a><br>

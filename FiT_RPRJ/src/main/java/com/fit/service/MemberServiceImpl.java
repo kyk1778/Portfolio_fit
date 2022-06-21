@@ -1,6 +1,8 @@
 
 package com.fit.service;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -58,27 +60,14 @@ public class MemberServiceImpl implements MemberService{
 	}
 	
 	
-	/*회원 탈퇴*/
+	/*ȸ�� Ż��*/
+	
 	@Override
 	public void memberDelete(MemberVO member) {
 		membermapper.memberDelete(member);
 	}
 	
 	
-	//아이디 찾기
-	@Override
-	public String findId(String userMail) {
-		return membermapper.findId(userMail);
-	}
-	
-	
 
-	/* ȸ�� Ż��*/
-	/*@Override
-	public int memberDelete(MemberVO member) {
-		return membermapper.memberDelete(member);
-		
-	}
-	*/
 	
 }

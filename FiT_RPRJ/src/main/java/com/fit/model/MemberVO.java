@@ -25,6 +25,9 @@ public class MemberVO {
 	//회원 기본주소
 	private String address2;
 	
+	//회원 상세주소
+	private String address3;
+	
 	//회원 이메일
 	private String userMail;
 	

@@ -51,7 +51,7 @@ public class MemberController {
 			
 			logger.info("회원가입 성공");
 			
-			return "redirect:/";
+			return "redirect:/main";
 			
 		}
 		
@@ -107,8 +107,9 @@ public class MemberController {
 					
 				}
 		
+
 		
-		
+
 		//로그인 페이지로 이동
 		@RequestMapping(value = "loginForm", method = RequestMethod.GET)
 		public void joinGET() {
@@ -139,10 +140,8 @@ public class MemberController {
 			
 			//일치하는 아이디, 비밀번호의 경우 (로그인 성공)
 			session.setAttribute("member", lvo);
-			
 	        return "redirect:/";
-	    }
-		
+	    	}
 		
 		//마이페이지로 이동
 		@RequestMapping(value = "myPage", method = RequestMethod.GET)
@@ -166,7 +165,7 @@ public class MemberController {
 				 HttpSession session = request.getSession();
 				 session.invalidate();
 				 
-				 return "redirect:/";
+				 return "redirect:/main";
 				    }
 				
 			 //회원탈퇴완료 이동
@@ -193,6 +192,5 @@ public class MemberController {
 			
 		
 }
-
-			 
+	 
 			 

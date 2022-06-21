@@ -1,6 +1,5 @@
 package com.fit.service;
 
-import java.util.List;
 
 import com.fit.model.MemberVO;
 
@@ -16,17 +15,13 @@ public interface MemberService {
 	public int idCheck(String userId) throws Exception;
 	
 	//비밀번호 중복 검사
-   public int passCheck(String userPass) throws Exception;
-	
-   
-   //회원수정
-   public void memberUpdate(MemberVO member);
-   
-	
+	public int passCheck(String userPass) throws Exception;
+	   
+	//회원수정
+	public void memberUpdate(MemberVO member);
+	   	
 	//회원탈퇴
-	 public void memberDelete(MemberVO member);
-	
-	
-	
+	public void memberDelete(MemberVO member);
+				
 	
 }

@@ -19,7 +19,7 @@ public class MemberServiceImpl implements MemberService{
 	private MemberMapper membermapper;
 
 	
-	/* ȸ������ */
+	/* 회원가입 */
 	@Override
 	public void memberJoin(MemberVO member) throws Exception {
 		
@@ -27,14 +27,14 @@ public class MemberServiceImpl implements MemberService{
 		
 	}
 	
-	/* ���̵� �ߺ� Ȯ�� */
+	/*아이디 중복체크 */
 	@Override
 	public int idCheck(String userId) throws Exception {
 		
 		return membermapper.idCheck(userId);
 	}
 	
-	/* ��й�ȣ �ߺ� Ȯ�� */
+	/* 비밀번호 확인*/
 	@Override
 	public int passCheck(String userPass) throws Exception {
 		
@@ -44,24 +44,21 @@ public class MemberServiceImpl implements MemberService{
 	
 	
 	
-	/* �α��� */
+	/*로그인 */
 	@Override
 	public MemberVO memberLogin(MemberVO member) throws Exception {
 		return membermapper.memberLogin(member);
 	}
 	
 	
-	/* ȸ�� ���� */
-	
-	
+	/*회원정보 수정*/
 	@Override
 	public void memberUpdate(MemberVO member) {
 		membermapper.memberUpdate(member);
 	}
 	
 	
-	/*ȸ�� Ż��*/
-	
+	/*회원 탈퇴*/
 	@Override
 	public void memberDelete(MemberVO member) {
 		membermapper.memberDelete(member);

@@ -25,7 +25,7 @@
 	<div class="input_wrap" align=center>
 		<label>제목</label>
     <br><br>		
-		<input name="qTitle" style="width: 550px, height: 20px; border-bottom: black 1px solid;" value="${member.userName}" readonly />">
+		<input name="qTitle" style="width: 550px, height: 20px;">
 		
 		</div>
 		   <br><br>
@@ -40,7 +40,7 @@
   <div class="input_wrap" align=center>
 		<label>내용</label>
     <br><br>
-		<textarea rows="30" cols="100" name="qContent" style="border: black 1px solid; border-radius: 3px;"></textarea>
+		<textarea rows="30" cols="100" name="qContent"></textarea>
 	</div>
   <br><br><br>
   <div class="btn_wrap" align=center>

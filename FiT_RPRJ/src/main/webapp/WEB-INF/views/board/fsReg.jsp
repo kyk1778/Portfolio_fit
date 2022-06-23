@@ -19,19 +19,19 @@
 <meta charset="UTF-8">
 <title>푸드스토리 글 작성</title>
 <h1>푸드스토리 글 작성</h1>
- <br><br><br><br>
+ <br><br>
 <form action="/board/fsReg" method="POST">
 	<div class="input_wrap" align=center>
 		<label>제목</label>
-    <br><br>		
-		<input name="fTitle" style="width: 550px, height: 20px; border-bottom: black 1px solid;">
+    <br>		
+		<input name="fTitle" style="width: 550px, height: 20px;">
 		
 		</div>
 		   <br><br>
   <div class="input_wrap" align=center>
 		<label>작성자</label>
-    <br><br>
-		<input name="fWrt" style="height: 20px; border-bottom: black 1px solid;" value='<c:out value="${member.userName}"/>' readonly>
+    <br>
+		<input name="fWrt" style="height: 20px;" value='<c:out value="${member.userName}"/>' readonly>
 
 	</div>
   <br><br>
@@ -39,7 +39,7 @@
   <div class="input_wrap" align=center>
 		<label>내용</label>
     <br><br>
-		<textarea rows="30" cols="100" name="fContent" style="border: black 1px solid; border-radius: 3px;"></textarea>
+		<textarea rows="30" cols="100" name="fContent"></textarea>
 	</div>
   <br><br><br>
   <div class="btn_wrap" align=center>

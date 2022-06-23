@@ -38,12 +38,10 @@ private static final Logger logger = LoggerFactory.getLogger(HomeController.clas
 private BoardService nservice;
 
 
-
-
 		//공지사항 상세보기
 		@RequestMapping(value = "/notice", method = RequestMethod.GET)
-		public void noticePageGET(int nBno, Model model) {
-				
+		public void noticePageGET(int nBno, Model model) {	
+		nservice.upViewCount(nBno);
 		model.addAttribute("pageInfo", nservice.getPageN(nBno));	
 		logger.info("공지사항 상세보기로 접속");
 					
@@ -57,14 +55,14 @@ private BoardService nservice;
 			
 			model.addAttribute("list", nservice.getListPaging(cri));
 		
+			
 			int total = nservice.getTotalN();
+			
 			PageMakeDTO pageMake = new PageMakeDTO(cri, total);
 			
 			model.addAttribute("pageMaker", pageMake);
-			
 		
-		
-		}
+				}
 		
 		
 		
@@ -154,20 +152,6 @@ private BoardService nservice;
 						}
 
 		
-		
-			
-					
-				
-				
-	
-			
-					
-					
-					
-				
-				
-				
-			
 		
 		
 		//푸드스토리 글 작성 페이지로 이동

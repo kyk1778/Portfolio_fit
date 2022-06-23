@@ -64,6 +64,12 @@ public class BoardServiceImpl implements BoardService {
 	}
 	
 	
+	/*공지사항 조회수*/
+	@Override
+	public void upViewCount(int nBno) {
+		mapper.upViewCount(nBno);
+		
+		}
 	
 	}
 

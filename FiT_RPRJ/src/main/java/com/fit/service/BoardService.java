@@ -28,6 +28,8 @@ public interface BoardService {
 	/*공지사항 게시물 총 갯수*/
 	public int getTotalN();
 
+	/*공지사항 조회수*/
+	public void upViewCount(int nBno);
 	
 	
 }

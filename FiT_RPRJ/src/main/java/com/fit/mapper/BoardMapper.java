@@ -16,7 +16,6 @@ public interface BoardMapper {
 	/*공지사항 목록보기(페이징 적용)*/
 	public List<NoticeVO> getListPagingN(Criteria cri);
 	
-	
 	/*공지사항 상세보기*/
 	public NoticeVO getPageN(int nBno);
 	
@@ -29,9 +28,8 @@ public interface BoardMapper {
 	/*공지사항 게시물 글 총 갯수*/
 	public int getTotalN();
 
-	public int upViewCount(int nBno);
+	/*공지사항 조회수*/
+	public void upViewCount(int nBno);
 
-	
-	
 	
 }
